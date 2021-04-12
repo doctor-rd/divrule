@@ -1,0 +1,2 @@
+# divrule
+Compute divisibility rules
