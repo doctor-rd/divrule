@@ -12,11 +12,14 @@ p = 1
 l = [1]
 while True:
 	p = p*10%d
-	print(p if p<=d/2 else p-d, end=' ')
 	if p==0:
-		print('')
+		print('0')
 		break
-	if p in l or d-p in l:
+	if p==d-1:
+		print('-1 ...')
+		break
+	print(p, end=' ')
+	if p in l:
 		print('...')
 		break
 	l.append(p)
